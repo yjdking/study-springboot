@@ -30,7 +30,17 @@ dependencyManagement {
 
 }
 dependencies {
+    // spring-boot-starter启动
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // 连接数据库
+    implementation 'mysql:mysql-connector-java:5.1.38'
+    implementation 'org.springframework.data:spring-data-jpa'
+    implementation 'org.hibernate:hibernate-entitymanager:5.4.1.Final'
+
+    testImplementation 'junit:junit:4.12'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+
 }

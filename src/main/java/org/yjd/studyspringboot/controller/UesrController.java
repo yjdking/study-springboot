@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.yjd.studyspringboot.domain.User;
-import org.yjd.studyspringboot.domain.repository.UserRepository;
+import org.yjd.studyspringboot.domain.User.User;
+import org.yjd.studyspringboot.domain.User.UserRepository;
 
 @RestController
 public class UesrController {

@@ -1,4 +1,4 @@
-package com.imooc.domain.entity;
+package org.yjd.studyspringboot.immoc.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

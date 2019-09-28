@@ -1,12 +1,10 @@
-package com.imooc.dao;
+package org.yjd.studyspringboot.immoc.dao;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.util.List;
 
 //import static org.junit.Assert.*;
 

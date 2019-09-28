@@ -1,9 +1,8 @@
-package com.imooc.repository;
+package org.yjd.studyspringboot.immoc.repository;
 
-import com.imooc.domain.entity.Employee;
+import org.yjd.studyspringboot.immoc.entity.Employee;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.Repository;
 import org.springframework.data.repository.RepositoryDefinition;
 import org.springframework.data.repository.query.Param;
 

@@ -1,4 +1,4 @@
-package org.yjd.studyspringboot.domain;
+package org.yjd.studyspringboot.domain.User;
 
 /**
  * @author: yjd

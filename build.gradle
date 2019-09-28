@@ -1,9 +1,9 @@
 // master分支
 plugins {
-    id 'org.springframework.boot' version '2.1.6.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.6.RELEASE'
+    id 'org.springframework.boot' version '2.1.8.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
     id 'java'
-   // id 'war'
+    // id 'war'
 }
 
 // apply plugin: 'io.spring.dependency-management'
@@ -20,28 +20,29 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
 repositories {
-    mavenLocal()
-    mavenCentral()
     maven {
         url 'http://maven.aliyun.com/nexus/content/groups/public/'
     }
+    mavenCentral()
 }
 
-dependencyManagement {
+/*dependencyManagement {
 
-}
+}*/
 dependencies {
     // spring-boot-starter启动
-    implementation 'org.springframework.boot:spring-boot-starter'
+    // implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // swagger controller 扫描
+    implementation 'io.springfox:springfox-swagger2:2.8.0'
 
     // 连接数据库
     implementation 'mysql:mysql-connector-java:5.1.38'
     implementation 'org.springframework.data:spring-data-jpa'
     implementation 'org.hibernate:hibernate-entitymanager:5.4.1.Final'
 
+    // 测试
     testImplementation 'junit:junit:4.12'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-
-
 }

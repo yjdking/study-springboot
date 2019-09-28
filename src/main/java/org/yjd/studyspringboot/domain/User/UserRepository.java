@@ -1,7 +1,7 @@
-package org.yjd.studyspringboot.domain.repository;
+package org.yjd.studyspringboot.domain.User;
 
 import org.springframework.stereotype.Repository;
-import org.yjd.studyspringboot.domain.User;
+import org.yjd.studyspringboot.domain.User.User;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;

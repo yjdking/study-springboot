@@ -1,4 +1,4 @@
-package com.imooc.dao;
+package org.yjd.studyspringboot.immoc.dao;
 
 public class SpringData {
 }

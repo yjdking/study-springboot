@@ -11,24 +11,20 @@ import java.util.List;
 public class UesrController {
 
     @Autowired
-    private UserApplicationService userRepository;
+    private UserApplicationService UserApplicationService;
 
-    public UesrController() {
-        userRepository = null;
-    }
-
-    @PostMapping("/person")
+    @PostMapping("/person/post")
     public UserApplication save(@RequestParam String name){
         UserApplication userApplication = new UserApplication();
-        if (userRepository.saveUser(userApplication)) {
+        /*if (userRepository.saveUser(userApplication)) {
             System.out.println("用户对象" + userApplication);
-        }
+        }*/
 
         return userApplication;
     }
 
     @GetMapping("/person")
-    public List<UserApplication> get(@PathVariable String name){
-        return  userRepository.getUser(name);
+    public List<UserApplication> get(@RequestParam String name){
+        return  UserApplicationService.getUser(name);
     }
 }

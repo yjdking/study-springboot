@@ -1,5 +1,6 @@
 package org.yjd.studyspringboot.domain.userapplication;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,6 +16,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Service
 public class UserApplicationService {
 
+    @Autowired
     private UserApplicationRepositpory userApplicationRepositpory;
     /**
      * 采用内存型存储方式 -> map
@@ -30,11 +32,12 @@ public class UserApplicationService {
      * @param userApplication
      * @return
      */
-    public boolean saveUser(UserApplication userApplication) {
+    public boolean saveUser(UserApplication userApplication) {/*
         boolean success = false;
         Integer id = idGenerator.getAndIncrement();
         userApplication.setId(id);
-        return repository.put(id, userApplication) == null;
+        return repository.put(id, userApplication) == null;*/
+        return true;
     }
 
     public List<UserApplication> getUser(String name) {

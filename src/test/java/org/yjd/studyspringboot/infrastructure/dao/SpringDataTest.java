@@ -1,4 +1,4 @@
-package org.yjd.studyspringboot.immoc.dao;
+package org.yjd.studyspringboot.infrastructure.dao;
 
 import org.junit.After;
 import org.junit.Before;

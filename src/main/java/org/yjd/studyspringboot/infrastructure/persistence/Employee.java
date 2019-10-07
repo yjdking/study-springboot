@@ -1,4 +1,4 @@
-package org.yjd.studyspringboot.immoc.entity;
+package org.yjd.studyspringboot.infrastructure.persistence;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

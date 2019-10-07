@@ -1,6 +1,7 @@
-package org.yjd.studyspringboot.immoc.repository;
+package org.yjd.studyspringboot.infrastructure.repository;
 
-import org.yjd.studyspringboot.immoc.entity.Employee;
+import org.yjd.studyspringboot.domain.EmployeeRepository;
+import org.yjd.studyspringboot.infrastructure.persistence.Employee;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

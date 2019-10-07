@@ -1,6 +1,6 @@
-package org.yjd.studyspringboot.immoc.repository;
+package org.yjd.studyspringboot.domain;
 
-import org.yjd.studyspringboot.immoc.entity.Employee;
+import org.yjd.studyspringboot.infrastructure.persistence.Employee;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.RepositoryDefinition;

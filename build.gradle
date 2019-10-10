@@ -46,11 +46,20 @@ dependencies {
     //lombok entity;
     implementation 'org.projectlombok:lombok'
 
-    // 连接数据库
+/*    // 连接数据库
     implementation 'mysql:mysql-connector-java:5.1.38'
     implementation 'org.springframework.data:spring-data-jpa'
     // implementation 'org.hibernate:hibernate-entitymanager:5.4.1.Final'
-    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation 'org.hibernate:hibernate-entitymanager'*/
+
+    // 连接数据库
+    implementation 'mysql:mysql-connector-java:5.1.38'
+    // 使用这个依赖要通过 application.yml 的方式连接数据库
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    // 不要单个使用这种依赖可能会报错
+    // implementation 'org.springframework.data:spring-data-jpa'
+    // implementation 'org.hibernate:hibernate-entitymanager:5.4.1.Final'
+
     // 测试
     testImplementation 'junit:junit:4.12'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'

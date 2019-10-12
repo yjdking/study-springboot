@@ -27,4 +27,6 @@ public class UesrController {
     public List<UserApplication> get(@RequestParam String name){
         return  UserApplicationService.getUser(name);
     }
+
+
 }

@@ -60,7 +60,12 @@ dependencies {
     // implementation 'org.springframework.data:spring-data-jpa'
     // implementation 'org.hibernate:hibernate-entitymanager:5.4.1.Final'
 
+    // jaosn转化工具
+    implementation 'com.alibaba:fastjson:1.2.62'
     // 测试
     testImplementation 'junit:junit:4.12'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+
+
 }
